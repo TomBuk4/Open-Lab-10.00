@@ -1,4 +1,11 @@
 using Open_Lab_10._00;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 
 internal class Program
 {
@@ -6,8 +13,13 @@ internal class Program
     {
         Console.WriteLine("Hello, World!");
         Book LOTR = new Book();
-        LOTR.title = "C";
-        Console.WriteLine("LORT.title");
+        LOTR.SetTitle("Knižka pre (ne)poslušné deti");
+        LOTR.SetPages(64);
+        LOTR.SetAuthor("Miro Jaroš");
+        LOTR.SetCategory("Kids");
+        LOTR.SetReleaseDate(2020);
+        LOTR.print();
+
 
     }
 }

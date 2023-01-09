@@ -26,6 +26,10 @@ namespace Open_Lab_10._00
         { return pages; }
         public int SetPages(int pages)
         { 
+            if(pages < 0)
+            { 
+                return 1; 
+            }
             this.pages = pages; 
             return pages;
         }
@@ -47,6 +51,14 @@ namespace Open_Lab_10._00
         { return releaseDate; }
         public int SetReleaseDate(int releaseDate)
         {
+            if ((releaseDate <= 2021) || (releaseDate >= 1450))
+            {
+                releaseDate = releaseDate;
+            }
+            else
+            {
+                releaseDate = -1;
+            }
             this.releaseDate = releaseDate;
             return releaseDate;
         }

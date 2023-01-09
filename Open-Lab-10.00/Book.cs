@@ -62,15 +62,6 @@ namespace Open_Lab_10._00
             this.releaseDate = releaseDate;
             return releaseDate;
         }
-
-        public void print()
-        {
-            Console.WriteLine("Názov: " + title);
-            Console.WriteLine("Autor: " + author);
-            Console.WriteLine("Kategória: " + category);
-            Console.WriteLine("Vydané: " + releaseDate);
-            Console.WriteLine("Počet strán: " + pages);
-        }
         public Book()
         {
             title = "-1";
@@ -95,5 +86,15 @@ namespace Open_Lab_10._00
             this.category = category;
             this.releaseDate = releaseDate;
         }
+
+        public void print()
+        {
+            Console.WriteLine("Názov: " + title);
+            Console.WriteLine("Autor: " + author);
+            Console.WriteLine("Kategória: " + category);
+            Console.WriteLine("Vydané: " + releaseDate);
+            Console.WriteLine("Počet strán: " + pages);
+        }
+
     }
 }

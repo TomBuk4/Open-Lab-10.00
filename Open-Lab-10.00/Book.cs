@@ -9,11 +9,11 @@ namespace Open_Lab_10._00
 {
     internal class Book
     {
-        public string title;
-        public int pages;
-        public string author;
-        public string category;
-        public int releaseDate;
+        private string title;
+        private int pages;
+        private string author;
+        private string category;
+        private int releaseDate;
 
       
 
@@ -90,15 +90,11 @@ namespace Open_Lab_10._00
             this.releaseDate = releaseDate;
         }
 
-        public void print()
+        public override string ToString()
         {
-            Console.WriteLine("Názov: " + title);
-            Console.WriteLine("Autor: " + author);
-            Console.WriteLine("Kategória: " + category);
-            Console.WriteLine("Vydané: " + releaseDate);
-            Console.WriteLine("Počet strán: " + pages);
+            return String.Format($"{this.title}, Počet strán: {this.pages}, Kategória: {this.category}, Napisaná: {this.author}, Vyšla: {this.releaseDate}");
         }
-        public static readonly List<string> categoryList = new List<string>()
+        public static List<string> categoryList = new List<string>()
         {"detské", "romantické", "náučné", "sci-fi", "dobrodružné"};
 
     }

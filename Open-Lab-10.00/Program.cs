@@ -9,23 +9,26 @@ using System.Threading.Tasks;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        Book LOTR = new Book();
-        LOTR.Title = "Knižka pre (ne)poslušné deti";
-        LOTR.Pages = 64;
-        LOTR.Author = "Miro Jaroš";
-        LOTR.Category = "Kids";
-        LOTR.ReleaseDate = 2020;
-        LOTR.print();
+        Book Math = new Book();
+        Book Chemistry = new Book();
+        Book Biology = new Book();
+        Book Physics = new Book();
 
-        Book LOTR2 = new Book();
-        Book LOTR3 = new Book("Tešíme sa na Ježiška", 80);
-        Book HOBIT = new Book("The Hobbit", 304, "John Ronald Reuel Tolkien", "Fantasy novel", 1937);
-        LOTR2.print();
-        LOTR3.print();
-        HOBIT.print();
+        Library schoolLibrary = new Library();
+        schoolLibrary.NumberOfBooks = 4;
+        schoolLibrary.NumberOfStudents = 2;
+
+        schoolLibrary.StudentsList.Add("John");
+        schoolLibrary.StudentsList.Add("Poul");
+
+        schoolLibrary.BooksList.Add(Math);
+        schoolLibrary.BooksList.Add(Chemistry);
+        schoolLibrary.BooksList.Add(Biology);
+        schoolLibrary.BooksList.Add(Physics);
+
+        Console.WriteLine(schoolLibrary.ToString());
 
 
     }

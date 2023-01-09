@@ -9,58 +9,61 @@ namespace Open_Lab_10._00
 {
     internal class Book
     {
-        private string title;
-        private int pages;
-        private string author;
-        private string category;
-        private int releaseDate;
+        public string title;
+        public int pages;
+        public string author;
+        public string category;
+        public int releaseDate;
 
-        private string GetTitle()
-        { return title; }
-        public string SetTitle(string title)
+      
+
+        public string Title
         {
-            this.title = title;
-            return title;
+            get { return title; }
+        
+            set { this.title = value; }
         }
-        private int GetPages()
-        { return pages; }
-        public int SetPages(int pages)
+        public int Pages
         {
-            if (pages < 0)
+            get { return pages; }
+       
+            set
             {
-                return 1;
+                if (pages < 0)
+                {
+                    pages = 1;
+                }
             }
-            this.pages = pages;
-            return pages;
+
         }
-        private string GetAuthor()
-        { return author; }
-        public string SetAuthor(string author)
+        public string Author
         {
-            this.author = author;
-            return author;
+           get { return author; }
+        
+           set { this.author = value; }
+            
         }
-        private string GetCategory()
-        { return category; }
-        public string SetCategory(string category)
+
+        public string Category
         {
-            this.category = category;
-            return category;
+           set { this.category = value; }
+            
         }
-        private int GetReleaseDate()
-        { return releaseDate; }
-        public int SetReleaseDate(int releaseDate)
+        public int ReleaseDate
         {
-            if ((releaseDate <= 2021) || (releaseDate >= 1450))
+           get { return releaseDate; }
+        
+            set
             {
-                releaseDate = releaseDate;
+                if ((releaseDate <= 2021) || (releaseDate >= 1450))
+                {
+                    releaseDate = value;
+                }
+                else
+                {
+                    releaseDate = -1;
+                }
             }
-            else
-            {
-                releaseDate = -1;
-            }
-            this.releaseDate = releaseDate;
-            return releaseDate;
         }
         public Book()
         {
@@ -95,6 +98,8 @@ namespace Open_Lab_10._00
             Console.WriteLine("Vydané: " + releaseDate);
             Console.WriteLine("Počet strán: " + pages);
         }
+        public static readonly List<string> categoryList = new List<string>()
+        {"detské", "romantické", "náučné", "sci-fi", "dobrodružné"};
 
     }
 }

@@ -13,11 +13,11 @@ internal class Program
     {
         Console.WriteLine("Hello, World!");
         Book LOTR = new Book();
-        LOTR.SetTitle("Knižka pre (ne)poslušné deti");
-        LOTR.SetPages(64);
-        LOTR.SetAuthor("Miro Jaroš");
-        LOTR.SetCategory("Kids");
-        LOTR.SetReleaseDate(2020);
+        LOTR.Title = "Knižka pre (ne)poslušné deti";
+        LOTR.Pages = 64;
+        LOTR.Author = "Miro Jaroš";
+        LOTR.Category = "Kids";
+        LOTR.ReleaseDate = 2020;
         LOTR.print();
 
         Book LOTR2 = new Book();

@@ -65,11 +65,11 @@ namespace Open_Lab_10._00
 
         public void print()
         {
-            Console.WriteLine(title);
-            Console.WriteLine(author);
-            Console.WriteLine(category);
-            Console.WriteLine(releaseDate);
-            Console.WriteLine(pages);
+            Console.WriteLine("Názov: " + title);
+            Console.WriteLine("Autor: " + author);
+            Console.WriteLine("Kategória: " + category);
+            Console.WriteLine("Vydané: " + releaseDate);
+            Console.WriteLine("Počet strán: " + pages);
         }
         public Book()
         {

@@ -18,15 +18,11 @@ internal class Program
         LOTR.SetAuthor("Miro Jaroš");
         LOTR.SetCategory("Kids");
         LOTR.SetReleaseDate(2020);
+        LOTR.print();
 
-        Console.WriteLine(LOTR.SetTitle);
-        Console.WriteLine(LOTR.SetPages);
-        Console.WriteLine(LOTR.SetAuthor);
-        Console.WriteLine(LOTR.SetCategory);
-        Console.WriteLine(LOTR.SetReleaseDate);
         Book LOTR2 = new Book();
         Book LOTR3 = new Book("Tešíme sa na Ježiška", 80);
-        Book HOBIT = new Book("The Hobbit", 304, "Fantasy novel", "John Ronald Reuel Tolkien", 1937);
+        Book HOBIT = new Book("The Hobbit", 304, "John Ronald Reuel Tolkien", "Fantasy novel", 1937);
         LOTR2.print();
         LOTR3.print();
         HOBIT.print();

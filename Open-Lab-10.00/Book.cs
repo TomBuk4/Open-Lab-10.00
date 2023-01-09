@@ -9,11 +9,11 @@ namespace Open_Lab_10._00
 {
     internal class Book
     {
-        public string title;
-        public int pages;
-        public string author;
-        public string category;
-        public int releaseDate;
+        private string title;
+        private int pages;
+        private string author;
+        private string category;
+        private int releaseDate;
 
       
 

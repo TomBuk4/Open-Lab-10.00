@@ -11,12 +11,14 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Book Math = new Book();
-        Math.Title = "Matika";
-        Math.Pages = 64;
-        Math.Author = "Miro Jaroš";
-        Math.Category = "Škola";
-        Math.ReleaseDate = 2020;
+        Book Math = new Book
+        {
+            Title = "Matika",
+            Pages = 64,
+            Author = "Miro Jaroš",
+            Category = "Škola",
+            ReleaseDate = 2020
+        };
         Book Chemistry = new Book();
         Chemistry.Title = "Chemia";
         Chemistry.Pages = 744;

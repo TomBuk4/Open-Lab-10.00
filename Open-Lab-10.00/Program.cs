@@ -12,9 +12,29 @@ internal class Program
     static void Main(string[] args)
     {
         Book Math = new Book();
+        Math.Title = "Matika";
+        Math.Pages = 64;
+        Math.Author = "Miro Jaroš";
+        Math.Category = "Škola";
+        Math.ReleaseDate = 2020;
         Book Chemistry = new Book();
+        Chemistry.Title = "Chemia";
+        Chemistry.Pages = 744;
+        Chemistry.Author = "Miro Jaroš";
+        Chemistry.Category = "Škola";
+        Chemistry.ReleaseDate = 2020;
         Book Biology = new Book();
+        Biology.Title = "Biológia";
+        Biology.Pages = 500;
+        Biology.Author = "Miro Jaroš";
+        Biology.Category = "Škola";
+        Biology.ReleaseDate = 2020;
         Book Physics = new Book();
+        Physics.Title = "Fyzika";
+        Physics.Pages = 890;
+        Physics.Author = "Miro Jaroš";
+        Physics.Category = "Škola";
+        Physics.ReleaseDate = 2020;
 
         Library schoolLibrary = new Library();
         schoolLibrary.NumberOfBooks = 4;
